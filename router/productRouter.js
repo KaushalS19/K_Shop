@@ -2,6 +2,8 @@ const express = require("express");
 const Route = express.Router();
 const Product = require("../model/productModel");
 
+Route.get("/",())
+
 Route.post("/products", async (req, resp) => {
   try {
     const product = new Product(req.body);
